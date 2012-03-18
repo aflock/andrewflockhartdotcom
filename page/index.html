@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>AFlock</title>
+    <link rel="icon" type="image/ico" href="../images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+    <link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Basic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Asul' rel='stylesheet' type='text/css'>
+    <!--can a brotha get some jquery, google?-->
+    <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function(){
+
+          $("#fsho").hide();
+
+          $(".trigger").click(function(){
+            $(".panel").toggle("fast");
+            $(this).toggleClass("active");
+            $("#trigger_title").toggle();
+            $("#fsho").toggle();
+            return false;
+            });
+
+
+          $('#maiku').hide();
+
+          $("#haikupic").click(function(){
+            $('#haiku').fadeOut(2000);
+            $('#maiku').fadeIn(2000);
+            //var maiku = chooseHaiku();
+            });
+
+          $("#maiku").click(function(){
+            $('#maiku').fadeOut(2000);
+            $('#haiku').fadeIn(2000);
+            //var maiku = chooseHaiku();
+            });
+          });
+        </script>
+      </head>
+
+      <body>
+        <a href="http://github.com/aflock"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/bec6c51521dcc8148146135149fe06a9cc737577/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+
+        <div id="wrapper" class="center">
+
+
+          <h1>&nbsp;<a href="http://www.twitter.com/andruflockhart">A .</a>&nbsp;F L O C K <span style="color:#A60000"><3</span></h1>
+          <br>
+          <br>
+
+          <!--
+          &nbsp;&nbsp;<a href="http://www.facebook.com/andrew.flockhart"><img src="../images/smfb.png"></a>
+          <a href="https://twitter.com/#!/andruflockhart"><img src="../images/smtw.png"></a>
+          -->
+
+          <div id="om"><img src="../images/om.jpg" id="ompic"> </div>
+
+          <div id="hw">
+            <div id="haiku"><img src="../images/haiku.png" id="haikupic"> </div>
+            <div id="maiku">I like to wash,<br>
+              the dust of this world<br>
+              In the droplets of dew<br>
+              --Basho</div>
+          </div>
+
+
+
+        </div>
+
+
+
+        <!--Fancy sliding panel
+        <div class="panel">
+          <h3> DA PANEL SON </h3>
+
+          <p><img class="right" src="profile4.jpg" alt="AF"/> Cutest boy with computers. Likes to beatbox, be silly, and sleep all day. AKA baby dinosaur. some content f'y'ass  <p>
+
+        </div>
+
+
+        <a class="trigger" href="#"><p id="trigger_title" > WHO DAT? </p><p id="fsho" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FSHO</p></a>
+        -->
+      </body>
+    </html>
+
