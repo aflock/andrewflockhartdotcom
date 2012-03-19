@@ -52,6 +52,26 @@ a:visited{color:#000}
   -webkit-transition: opacity 1s linear;
 }
 
+#ompic{
+    margin-right:5px;
+    width: 335px;
+    height: 300px;
+    opacity: .12;
+    background: transparent;
+  filter: alpha(opacity=50);
+  -webkit-transition: opacity 1s linear;
+}
+
+#ompic:hover {
+    margin-right:5px;
+    width: 335px;
+    height: 300px;
+    opacity: .85;
+    background: transparent;
+  filter: alpha(opacity=100);
+  -webkit-transition: opacity 1s linear;
+}
+
 #wrapper{
     width:97%;
     font-size: 20px;
@@ -73,17 +93,6 @@ text-shadow: 2px 2px 5px #ccc;
     width:50%;
     height: 95%;
     margin-top: -225px;
-}
-
-#ompic{
-    /*size:10px, 10px;*/
-    margin-right:5px;
-    width: 335px;
-    height: 300px;
-    opacity: .07;
-    background: transparent;
-
-
 }
 
 

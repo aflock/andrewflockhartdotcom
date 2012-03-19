@@ -13,9 +13,21 @@
     <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
 
     <script type="text/javascript" charset="utf-8">
+
+      var haikus = new Array();
+      haikus[0] = "A sudden shower falls <br> and naked I am riding <br>on a naked horse!<br>--Issa"
+      haikus[1] = "Spring rain<br> I swoop into Brooklyn<br> As the drops fall<br> On my doorstep.<br> Home."
+      haikus[2] = "I like to wash,<br> the dust of this world<br> In the droplets of dew<br> --Basho"
+      function chooseHaiku(){
+        var rando = Math.ceil(Math.random()*haikus.length) - 1;
+        return haikus[rando];
+      }
       $(document).ready(function(){
 
           $("#fsho").hide();
+
+          var ku1 = chooseHaiku();
+          $('#maiku').html(ku1);
 
           $(".trigger").click(function(){
             $(".panel").toggle("fast");
@@ -36,8 +48,11 @@
 
           $("#maiku").click(function(){
             $('#maiku').fadeOut(2000);
-            $('#haiku').fadeIn(2000);
-            //var maiku = chooseHaiku();
+            $('#haiku').fadeIn(2000, function(){
+              var nuku = chooseHaiku();
+              $('#maiku').html(nuku);
+              });
+
             });
           });
         </script>
