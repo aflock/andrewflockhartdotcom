@@ -39,11 +39,21 @@
 
 
           $('#maiku').hide();
+          $('#binary').hide();
+
+          $("#om").click(function(){
+            $('#om').fadeOut(2000);
+            $('#binary').fadeIn(2000);
+            });
+
+          $("#binary").click(function(){
+            $('#binary').fadeOut(2000);
+            $('#om').fadeIn(2000);
+            });
 
           $("#haikupic").click(function(){
             $('#haiku').fadeOut(2000);
             $('#maiku').fadeIn(2000);
-            //var maiku = chooseHaiku();
             });
 
           $("#maiku").click(function(){
@@ -73,7 +83,15 @@
           <a href="https://twitter.com/#!/andruflockhart"><img src="../images/smtw.png"></a>
           -->
 
-          <div id="om"><img src="../images/om.jpg" id="ompic"> </div>
+          <div id="omw">
+          <div id="om"> <img src="../images/om.jpg" id="ompic"> </div>
+            <div id="binary">
+              1001<br>
+              0101<br>
+              0000<br>
+            </div>
+
+          </div>
 
           <div id="hw">
             <div id="haiku"><img src="../images/haiku.png" id="haikupic"> </div>
